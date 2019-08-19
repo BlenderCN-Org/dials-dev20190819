@@ -1,0 +1,234 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  spotfinder.threshold.helen.debug)
+   _dials_autocomplete_values="true false";;
+
+  output.shoeboxes)
+   _dials_autocomplete_values="true false";;
+
+  per_image_statistics)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.threshold.algorithm)
+   _dials_autocomplete_values="dispersion dispersion_extended helen single";;
+
+  spotfinder.filter.background_gradient.filter)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.compute_mean_background)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.mp.method)
+   _dials_autocomplete_values="none drmaa sge lsf pbs";;
+
+  spotfinder.force_2d)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.filter.ice_rings.filter)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.write_hot_mask)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.filter.spot_density.filter)
+   _dials_autocomplete_values="true false";;
+
+  spotfinder.filter.use_trusted_range)
+   _dials_autocomplete_values="true false";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  origin=)
+   _dials_autocomplete_values="input.tolerance.detector.origin=";;
+
+  rotation_axis=)
+   _dials_autocomplete_values="input.tolerance.goniometer.rotation_axis=";;
+
+  oscillation=)
+   _dials_autocomplete_values="input.tolerance.scan.oscillation=";;
+
+  d_max=)
+   _dials_autocomplete_values="spotfinder.filter.d_max=";;
+
+  per_image_statistics=)
+   _dials_autocomplete_values="per_image_statistics=";;
+
+  polarization_fraction=)
+   _dials_autocomplete_values="input.tolerance.beam.polarization_fraction=";;
+
+  nproc=)
+   _dials_autocomplete_values="spotfinder.mp.nproc=";;
+
+  debug_log=)
+   _dials_autocomplete_values="output.debug_log=";;
+
+  shoeboxes=)
+   _dials_autocomplete_values="output.shoeboxes=";;
+
+  njobs=)
+   _dials_autocomplete_values="spotfinder.mp.njobs=";;
+
+  border=)
+   _dials_autocomplete_values="spotfinder.filter.border=";;
+
+  fixed_rotation=)
+   _dials_autocomplete_values="input.tolerance.goniometer.fixed_rotation=";;
+
+  log=)
+   _dials_autocomplete_values="output.log=";;
+
+  min_chunksize=)
+   _dials_autocomplete_values="spotfinder.mp.min_chunksize=";;
+
+  min_spot_size=)
+   _dials_autocomplete_values="spotfinder.filter.min_spot_size=";;
+
+  circle=)
+   _dials_autocomplete_values="spotfinder.filter.untrusted.circle=";;
+
+  scan_range=)
+   _dials_autocomplete_values="spotfinder.scan_range=";;
+
+  pixel=)
+   _dials_autocomplete_values="spotfinder.filter.untrusted.pixel=";;
+
+  rectangle=)
+   _dials_autocomplete_values="spotfinder.filter.untrusted.rectangle=";;
+
+  direction=)
+   _dials_autocomplete_values="input.tolerance.beam.direction=";;
+
+  max_strong_pixel_fraction=)
+   _dials_autocomplete_values="spotfinder.filter.max_strong_pixel_fraction=";;
+
+  chunksize=)
+   _dials_autocomplete_values="spotfinder.mp.chunksize=";;
+
+  wavelength=)
+   _dials_autocomplete_values="input.tolerance.beam.wavelength=";;
+
+  polarization_normal=)
+   _dials_autocomplete_values="input.tolerance.beam.polarization_normal=";;
+
+  max_spot_size=)
+   _dials_autocomplete_values="spotfinder.filter.max_spot_size=";;
+
+  region_of_interest=)
+   _dials_autocomplete_values="spotfinder.region_of_interest=";;
+
+  fast_axis=)
+   _dials_autocomplete_values="input.tolerance.detector.fast_axis=";;
+
+  resolution_range=)
+   _dials_autocomplete_values="spotfinder.filter.resolution_range=";;
+
+  gain=)
+   _dials_autocomplete_values="spotfinder.threshold.dispersion.gain=";;
+
+  use_trusted_range=)
+   _dials_autocomplete_values="spotfinder.filter.use_trusted_range=";;
+
+  setting_rotation=)
+   _dials_autocomplete_values="input.tolerance.goniometer.setting_rotation=";;
+
+  force_2d=)
+   _dials_autocomplete_values="spotfinder.force_2d=";;
+
+  panel=)
+   _dials_autocomplete_values="spotfinder.filter.untrusted.panel=";;
+
+  algorithm=)
+   _dials_autocomplete_values="spotfinder.threshold.algorithm=";;
+
+  hot_mask_prefix=)
+   _dials_autocomplete_values="spotfinder.hot_mask_prefix=";;
+
+  verbosity=)
+   _dials_autocomplete_values="verbosity=";;
+
+  polygon=)
+   _dials_autocomplete_values="spotfinder.filter.untrusted.polygon=";;
+
+  mask=)
+   _dials_autocomplete_values="spotfinder.lookup.mask=";;
+
+  method=)
+   _dials_autocomplete_values="spotfinder.mp.method=";;
+
+  slow_axis=)
+   _dials_autocomplete_values="input.tolerance.detector.slow_axis=";;
+
+  write_hot_mask=)
+   _dials_autocomplete_values="spotfinder.write_hot_mask=";;
+
+  reflections=)
+   _dials_autocomplete_values="output.reflections=";;
+
+  compute_mean_background=)
+   _dials_autocomplete_values="spotfinder.compute_mean_background=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  output.*)
+    _dials_autocomplete_values="output.debug_log= output.experiments= output.log= output.reflections= output.shoeboxes=";;
+
+  spotfinder.filter.background_gradient.*)
+    _dials_autocomplete_values="spotfinder.filter.background_gradient.background_size= spotfinder.filter.background_gradient.filter= spotfinder.filter.background_gradient.gradient_cutoff=";;
+
+  spotfinder.filter.untrusted.*)
+    _dials_autocomplete_values="spotfinder.filter.untrusted.circle= spotfinder.filter.untrusted.panel= spotfinder.filter.untrusted.pixel= spotfinder.filter.untrusted.polygon= spotfinder.filter.untrusted.rectangle=";;
+
+  spotfinder.filter.ice_rings.*)
+    _dials_autocomplete_values="spotfinder.filter.ice_rings.d_min= spotfinder.filter.ice_rings.filter= spotfinder.filter.ice_rings.space_group= spotfinder.filter.ice_rings.unit_cell= spotfinder.filter.ice_rings.width=";;
+
+  spotfinder.filter.*)
+    _dials_autocomplete_values="spotfinder.filter.background_gradient. spotfinder.filter.border= spotfinder.filter.d_max= spotfinder.filter.d_min= spotfinder.filter.ice_rings. spotfinder.filter.max_separation= spotfinder.filter.max_spot_size= spotfinder.filter.max_strong_pixel_fraction= spotfinder.filter.min_spot_size= spotfinder.filter.resolution_range= spotfinder.filter.spot_density.filter= spotfinder.filter.untrusted. spotfinder.filter.use_trusted_range=";;
+
+  spotfinder.mp.*)
+    _dials_autocomplete_values="spotfinder.mp.chunksize= spotfinder.mp.method= spotfinder.mp.min_chunksize= spotfinder.mp.njobs= spotfinder.mp.nproc=";;
+
+  spotfinder.threshold.dispersion.*)
+    _dials_autocomplete_values="spotfinder.threshold.dispersion.gain= spotfinder.threshold.dispersion.global_threshold= spotfinder.threshold.dispersion.kernel_size= spotfinder.threshold.dispersion.min_local= spotfinder.threshold.dispersion.sigma_background= spotfinder.threshold.dispersion.sigma_strong=";;
+
+  spotfinder.threshold.helen.*)
+    _dials_autocomplete_values="spotfinder.threshold.helen.debug= spotfinder.threshold.helen.exp_spot_dimension= spotfinder.threshold.helen.global_threshold= spotfinder.threshold.helen.min_blob_score= spotfinder.threshold.helen.num_passes=";;
+
+  spotfinder.threshold.*)
+    _dials_autocomplete_values="spotfinder.threshold.algorithm= spotfinder.threshold.dispersion. spotfinder.threshold.helen. spotfinder.threshold.single.global_threshold=";;
+
+  spotfinder.*)
+    _dials_autocomplete_values="spotfinder.compute_mean_background= spotfinder.filter. spotfinder.force_2d= spotfinder.hot_mask_prefix= spotfinder.lookup.mask= spotfinder.mp. spotfinder.region_of_interest= spotfinder.scan_range= spotfinder.threshold. spotfinder.write_hot_mask=";;
+
+  input.tolerance.beam.*)
+    _dials_autocomplete_values="input.tolerance.beam.direction= input.tolerance.beam.polarization_fraction= input.tolerance.beam.polarization_normal= input.tolerance.beam.wavelength=";;
+
+  input.tolerance.detector.*)
+    _dials_autocomplete_values="input.tolerance.detector.fast_axis= input.tolerance.detector.origin= input.tolerance.detector.slow_axis=";;
+
+  input.tolerance.goniometer.*)
+    _dials_autocomplete_values="input.tolerance.goniometer.fixed_rotation= input.tolerance.goniometer.rotation_axis= input.tolerance.goniometer.setting_rotation=";;
+
+  input.tolerance.*)
+    _dials_autocomplete_values="input.tolerance.beam. input.tolerance.detector. input.tolerance.goniometer. input.tolerance.scan.oscillation=";;
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.tolerance.";;
+
+  *)
+    _dials_autocomplete_values="algorithm= border= chunksize= circle= compute_mean_background= d_max= debug_log= direction= fast_axis= fixed_rotation= force_2d= gain= hot_mask_prefix= input. log= mask= max_spot_size= max_strong_pixel_fraction= method= min_chunksize= min_spot_size= njobs= nproc= origin= oscillation= output. panel= per_image_statistics= pixel= polarization_fraction= polarization_normal= polygon= rectangle= reflections= region_of_interest= resolution_range= rotation_axis= scan_range= setting_rotation= shoeboxes= slow_axis= spotfinder. use_trusted_range= verbosity= wavelength= write_hot_mask=";;
+ esac
+}

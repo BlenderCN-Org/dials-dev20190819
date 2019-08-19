@@ -1,0 +1,27 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  experiments=)
+   _dials_autocomplete_values="input.experiments=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  *)
+    _dials_autocomplete_values="experiments= input.experiments=";;
+ esac
+}

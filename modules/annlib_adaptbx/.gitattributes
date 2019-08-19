@@ -1,0 +1,6 @@
+* text=auto !eol
+/__init__.py -text
+annlib_adaptbx/self_match.py -text
+/libtbx_refresh.py -text
+source_generators/__init__.py -text
+source_generators/generate_all.py -text

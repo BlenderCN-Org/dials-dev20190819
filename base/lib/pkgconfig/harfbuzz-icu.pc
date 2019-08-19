@@ -1,0 +1,13 @@
+prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+exec_prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+libdir=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/lib
+includedir=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include
+
+Name: harfbuzz
+Description: HarfBuzz text shaping library ICU integration
+Version: 1.1.3
+
+Requires: harfbuzz
+Requires.private: icu-uc
+Libs: -L${libdir} -lharfbuzz-icu
+Cflags: -I${includedir}/harfbuzz

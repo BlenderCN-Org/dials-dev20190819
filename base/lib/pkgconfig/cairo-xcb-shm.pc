@@ -1,0 +1,12 @@
+prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: cairo-xcb-shm
+Description: XCB/SHM functions for cairo graphics library
+Version: 1.14.4
+
+Requires: cairo xcb-shm
+Libs:  
+Cflags: -I${includedir}/cairo 

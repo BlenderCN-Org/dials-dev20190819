@@ -1,0 +1,18 @@
+prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+sysconfdir=${prefix}/etc
+localstatedir=${prefix}/var
+PACKAGE=fontconfig
+confdir=${sysconfdir}/fonts
+cachedir=${localstatedir}/cache/${PACKAGE}
+
+Name: Fontconfig
+Description: Font configuration and customization library
+Version: 2.11.1
+Requires:  freetype2
+Requires.private: 
+Libs: -L${libdir} -lfontconfig
+Libs.private: -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/lib -lexpat -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/lib -lfreetype    
+Cflags: -I${includedir} -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include/freetype2    

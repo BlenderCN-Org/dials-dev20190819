@@ -1,0 +1,384 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  integration.centroid.algorithm)
+   _dials_autocomplete_values="simple";;
+
+  significance_filter.enable)
+   _dials_autocomplete_values="true false";;
+
+  integration.debug.output)
+   _dials_autocomplete_values="true false";;
+
+  integration.block.units)
+   _dials_autocomplete_values="degrees radians frames";;
+
+  create_profile_model)
+   _dials_autocomplete_values="true false";;
+
+  integration.integrator)
+   _dials_autocomplete_values="auto 3d flat3d 2d single2d stills volume 3d_threaded";;
+
+  integration.use_dynamic_mask)
+   _dials_autocomplete_values="true false";;
+
+  integration.debug.delete_shoeboxes)
+   _dials_autocomplete_values="true false";;
+
+  profile.gaussian_rs.scan_varying)
+   _dials_autocomplete_values="true false";;
+
+  absorption_correction.fuller_kapton.within_spot_sigmas)
+   _dials_autocomplete_values="true false";;
+
+  integration.block.force)
+   _dials_autocomplete_values="true false";;
+
+  profile.algorithm)
+   _dials_autocomplete_values="gaussian_rs";;
+
+  integration.overlaps_filter.foreground_background.enable)
+   _dials_autocomplete_values="true false";;
+
+  prediction.force_static)
+   _dials_autocomplete_values="true false";;
+
+  profile.gaussian_rs.centroid_definition)
+   _dials_autocomplete_values="com s1";;
+
+  absorption_correction.fuller_kapton.smart_sigmas)
+   _dials_autocomplete_values="true false";;
+
+  integration.debug.reference.output)
+   _dials_autocomplete_values="true false";;
+
+  integration.debug.during)
+   _dials_autocomplete_values="modelling integration";;
+
+  integration.profile.fitting)
+   _dials_autocomplete_values="true false";;
+
+  sampling.integrate_all_reflections)
+   _dials_autocomplete_values="true false";;
+
+  profile.gaussian_rs.fitting.detector_space.deconvolution)
+   _dials_autocomplete_values="true false";;
+
+  profile.gaussian_rs.sigma_m_algorithm)
+   _dials_autocomplete_values="basic extended";;
+
+  integration.filter.ice_rings)
+   _dials_autocomplete_values="true false";;
+
+  profile.gaussian_rs.fitting.grid_method)
+   _dials_autocomplete_values="single regular_grid circular_grid spherical_grid";;
+
+  integration.background.simple.model.algorithm)
+   _dials_autocomplete_values="constant2d constant3d linear2d linear3d";;
+
+  integration.debug.split_experiments)
+   _dials_autocomplete_values="true false";;
+
+  integration.debug.separate_files)
+   _dials_autocomplete_values="true false";;
+
+  integration.background.gmodel.robust.algorithm)
+   _dials_autocomplete_values="true false";;
+
+  absorption_correction.algorithm)
+   _dials_autocomplete_values="fuller_kapton kapton_2019 other";;
+
+  absorption_correction.apply)
+   _dials_autocomplete_values="true false";;
+
+  output.include_bad_reference)
+   _dials_autocomplete_values="true false";;
+
+  integration.overlaps_filter.foreground_foreground.enable)
+   _dials_autocomplete_values="true false";;
+
+  integration.mp.method)
+   _dials_autocomplete_values="none drmaa sge lsf pbs";;
+
+  profile.gaussian_rs.fitting.fit_method)
+   _dials_autocomplete_values="reciprocal_space detector_space";;
+
+  integration.background.simple.outlier.algorithm)
+   _dials_autocomplete_values="null nsigma truncated normal plane tukey";;
+
+  integration.background.algorithm)
+   _dials_autocomplete_values="glm gmodel simple null median";;
+
+  integration.background.glm.model.algorithm)
+   _dials_autocomplete_values="constant2d constant3d loglinear2d loglinear3d";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  force=)
+   _dials_autocomplete_values="integration.block.force=";;
+
+  scan_varying=)
+   _dials_autocomplete_values="profile.gaussian_rs.scan_varying=";;
+
+  fit_method=)
+   _dials_autocomplete_values="profile.gaussian_rs.fitting.fit_method=";;
+
+  create_profile_model=)
+   _dials_autocomplete_values="create_profile_model=";;
+
+  d_max=)
+   _dials_autocomplete_values="prediction.d_max=";;
+
+  nproc=)
+   _dials_autocomplete_values="integration.mp.nproc=";;
+
+  deconvolution=)
+   _dials_autocomplete_values="profile.gaussian_rs.fitting.detector_space.deconvolution=";;
+
+  debug_log=)
+   _dials_autocomplete_values="output.debug_log=";;
+
+  apply=)
+   _dials_autocomplete_values="absorption_correction.apply=";;
+
+  sigma_m_algorithm=)
+   _dials_autocomplete_values="profile.gaussian_rs.sigma_m_algorithm=";;
+
+  njobs=)
+   _dials_autocomplete_values="integration.mp.njobs=";;
+
+  select=)
+   _dials_autocomplete_values="integration.debug.select=";;
+
+  size=)
+   _dials_autocomplete_values="integration.block.size=";;
+
+  detector_gain=)
+   _dials_autocomplete_values="integration.summation.detector_gain=";;
+
+  force_static=)
+   _dials_autocomplete_values="prediction.force_static=";;
+
+  log=)
+   _dials_autocomplete_values="output.log=";;
+
+  exclude_images=)
+   _dials_autocomplete_values="exclude_images=";;
+
+  grid_method=)
+   _dials_autocomplete_values="profile.gaussian_rs.fitting.grid_method=";;
+
+  delete_shoeboxes=)
+   _dials_autocomplete_values="integration.debug.delete_shoeboxes=";;
+
+  separate_files=)
+   _dials_autocomplete_values="integration.debug.separate_files=";;
+
+  filename=)
+   _dials_autocomplete_values="integration.debug.reference.filename=";;
+
+  fitting=)
+   _dials_autocomplete_values="integration.profile.fitting=";;
+
+  max_memory_usage=)
+   _dials_autocomplete_values="integration.block.max_memory_usage=";;
+
+  smart_sigmas=)
+   _dials_autocomplete_values="absorption_correction.fuller_kapton.smart_sigmas=";;
+
+  scan_step=)
+   _dials_autocomplete_values="profile.gaussian_rs.fitting.scan_step=";;
+
+  units=)
+   _dials_autocomplete_values="integration.block.units=";;
+
+  sigma_b=)
+   _dials_autocomplete_values="profile.gaussian_rs.parameters.sigma_b=";;
+
+  scan_range=)
+   _dials_autocomplete_values="scan_range=";;
+
+  number_of_partitions=)
+   _dials_autocomplete_values="integration.profile.validation.number_of_partitions=";;
+
+  centroid_definition=)
+   _dials_autocomplete_values="profile.gaussian_rs.centroid_definition=";;
+
+  model=)
+   _dials_autocomplete_values="integration.background.gmodel.model=";;
+
+  sigma_m=)
+   _dials_autocomplete_values="profile.gaussian_rs.parameters.sigma_m=";;
+
+  split_experiments=)
+   _dials_autocomplete_values="integration.debug.split_experiments=";;
+
+  use_dynamic_mask=)
+   _dials_autocomplete_values="integration.use_dynamic_mask=";;
+
+  overall=)
+   _dials_autocomplete_values="profile.gaussian_rs.min_spots.overall=";;
+
+  report=)
+   _dials_autocomplete_values="output.report=";;
+
+  during=)
+   _dials_autocomplete_values="integration.debug.during=";;
+
+  padding=)
+   _dials_autocomplete_values="prediction.padding=";;
+
+  grid_size=)
+   _dials_autocomplete_values="profile.gaussian_rs.fitting.grid_size=";;
+
+  min_partition_size=)
+   _dials_autocomplete_values="integration.profile.validation.min_partition_size=";;
+
+  verbosity=)
+   _dials_autocomplete_values="verbosity=";;
+
+  phil=)
+   _dials_autocomplete_values="output.phil=";;
+
+  mask=)
+   _dials_autocomplete_values="integration.lookup.mask=";;
+
+  within_spot_sigmas=)
+   _dials_autocomplete_values="absorption_correction.fuller_kapton.within_spot_sigmas=";;
+
+  method=)
+   _dials_autocomplete_values="integration.mp.method=";;
+
+  per_degree=)
+   _dials_autocomplete_values="profile.gaussian_rs.min_spots.per_degree=";;
+
+  margin=)
+   _dials_autocomplete_values="prediction.margin=";;
+
+  include_bad_reference=)
+   _dials_autocomplete_values="output.include_bad_reference=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  profile.gaussian_rs.fitting.*)
+    _dials_autocomplete_values="profile.gaussian_rs.fitting.detector_space.deconvolution= profile.gaussian_rs.fitting.fit_method= profile.gaussian_rs.fitting.grid_method= profile.gaussian_rs.fitting.grid_size= profile.gaussian_rs.fitting.scan_step= profile.gaussian_rs.fitting.threshold=";;
+
+  profile.gaussian_rs.min_spots.*)
+    _dials_autocomplete_values="profile.gaussian_rs.min_spots.overall= profile.gaussian_rs.min_spots.per_degree=";;
+
+  profile.gaussian_rs.parameters.*)
+    _dials_autocomplete_values="profile.gaussian_rs.parameters.n_sigma= profile.gaussian_rs.parameters.sigma_b= profile.gaussian_rs.parameters.sigma_m=";;
+
+  profile.gaussian_rs.*)
+    _dials_autocomplete_values="profile.gaussian_rs.centroid_definition= profile.gaussian_rs.filter.min_zeta= profile.gaussian_rs.fitting. profile.gaussian_rs.min_spots. profile.gaussian_rs.parameters. profile.gaussian_rs.scan_varying= profile.gaussian_rs.sigma_m_algorithm=";;
+
+  profile.*)
+    _dials_autocomplete_values="profile.algorithm= profile.gaussian_rs.";;
+
+  absorption_correction.fuller_kapton.rotation_angle_deg.*)
+    _dials_autocomplete_values="absorption_correction.fuller_kapton.rotation_angle_deg.sigma= absorption_correction.fuller_kapton.rotation_angle_deg.value=";;
+
+  absorption_correction.fuller_kapton.xtal_height_above_kapton_mm.*)
+    _dials_autocomplete_values="absorption_correction.fuller_kapton.xtal_height_above_kapton_mm.sigma= absorption_correction.fuller_kapton.xtal_height_above_kapton_mm.value=";;
+
+  absorption_correction.fuller_kapton.kapton_thickness_mm.*)
+    _dials_autocomplete_values="absorption_correction.fuller_kapton.kapton_thickness_mm.sigma= absorption_correction.fuller_kapton.kapton_thickness_mm.value=";;
+
+  absorption_correction.fuller_kapton.kapton_half_width_mm.*)
+    _dials_autocomplete_values="absorption_correction.fuller_kapton.kapton_half_width_mm.sigma= absorption_correction.fuller_kapton.kapton_half_width_mm.value=";;
+
+  absorption_correction.fuller_kapton.*)
+    _dials_autocomplete_values="absorption_correction.fuller_kapton.kapton_half_width_mm. absorption_correction.fuller_kapton.kapton_thickness_mm. absorption_correction.fuller_kapton.rotation_angle_deg. absorption_correction.fuller_kapton.smart_sigmas= absorption_correction.fuller_kapton.within_spot_sigmas= absorption_correction.fuller_kapton.xtal_height_above_kapton_mm.";;
+
+  absorption_correction.*)
+    _dials_autocomplete_values="absorption_correction.algorithm= absorption_correction.apply= absorption_correction.fuller_kapton.";;
+
+  integration.profile.validation.*)
+    _dials_autocomplete_values="integration.profile.validation.min_partition_size= integration.profile.validation.number_of_partitions=";;
+
+  integration.profile.*)
+    _dials_autocomplete_values="integration.profile.fitting= integration.profile.validation.";;
+
+  integration.filter.*)
+    _dials_autocomplete_values="integration.filter.ice_rings= integration.filter.max_shoebox_overlap= integration.filter.min_zeta=";;
+
+  integration.overlaps_filter.*)
+    _dials_autocomplete_values="integration.overlaps_filter.foreground_background.enable= integration.overlaps_filter.foreground_foreground.enable=";;
+
+  integration.mp.*)
+    _dials_autocomplete_values="integration.mp.method= integration.mp.njobs= integration.mp.nproc=";;
+
+  integration.background.gmodel.robust.*)
+    _dials_autocomplete_values="integration.background.gmodel.robust.algorithm= integration.background.gmodel.robust.tuning_constant=";;
+
+  integration.background.gmodel.*)
+    _dials_autocomplete_values="integration.background.gmodel.min_pixels= integration.background.gmodel.model= integration.background.gmodel.robust.";;
+
+  integration.background.glm.*)
+    _dials_autocomplete_values="integration.background.glm.min_pixels= integration.background.glm.model.algorithm= integration.background.glm.robust.tuning_constant=";;
+
+  integration.background.simple.outlier.tukey.*)
+    _dials_autocomplete_values="integration.background.simple.outlier.tukey.lower= integration.background.simple.outlier.tukey.upper=";;
+
+  integration.background.simple.outlier.nsigma.*)
+    _dials_autocomplete_values="integration.background.simple.outlier.nsigma.lower= integration.background.simple.outlier.nsigma.upper=";;
+
+  integration.background.simple.outlier.plane.*)
+    _dials_autocomplete_values="integration.background.simple.outlier.plane.fraction= integration.background.simple.outlier.plane.n_sigma=";;
+
+  integration.background.simple.outlier.truncated.*)
+    _dials_autocomplete_values="integration.background.simple.outlier.truncated.lower= integration.background.simple.outlier.truncated.upper=";;
+
+  integration.background.simple.outlier.*)
+    _dials_autocomplete_values="integration.background.simple.outlier.algorithm= integration.background.simple.outlier.normal.min_pixels= integration.background.simple.outlier.nsigma. integration.background.simple.outlier.plane. integration.background.simple.outlier.truncated. integration.background.simple.outlier.tukey.";;
+
+  integration.background.simple.*)
+    _dials_autocomplete_values="integration.background.simple.min_pixels= integration.background.simple.model.algorithm= integration.background.simple.outlier.";;
+
+  integration.background.*)
+    _dials_autocomplete_values="integration.background.algorithm= integration.background.glm. integration.background.gmodel. integration.background.simple.";;
+
+  integration.debug.reference.*)
+    _dials_autocomplete_values="integration.debug.reference.filename= integration.debug.reference.output=";;
+
+  integration.debug.*)
+    _dials_autocomplete_values="integration.debug.delete_shoeboxes= integration.debug.during= integration.debug.output= integration.debug.reference. integration.debug.select= integration.debug.separate_files= integration.debug.split_experiments=";;
+
+  integration.block.*)
+    _dials_autocomplete_values="integration.block.force= integration.block.max_memory_usage= integration.block.size= integration.block.threshold= integration.block.units=";;
+
+  integration.*)
+    _dials_autocomplete_values="integration.background. integration.block. integration.centroid.algorithm= integration.debug. integration.filter. integration.integrator= integration.lookup.mask= integration.mp. integration.overlaps_filter. integration.profile. integration.summation.detector_gain= integration.use_dynamic_mask=";;
+
+  sampling.*)
+    _dials_autocomplete_values="sampling.integrate_all_reflections= sampling.maximum_sample_size= sampling.minimum_sample_size= sampling.reflections_per_degree=";;
+
+  prediction.*)
+    _dials_autocomplete_values="prediction.d_max= prediction.d_min= prediction.force_static= prediction.margin= prediction.padding=";;
+
+  output.*)
+    _dials_autocomplete_values="output.debug_log= output.experiments= output.include_bad_reference= output.log= output.phil= output.reflections= output.report=";;
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.reflections=";;
+
+  significance_filter.*)
+    _dials_autocomplete_values="significance_filter.d_min= significance_filter.enable= significance_filter.isigi_cutoff= significance_filter.n_bins=";;
+
+  *)
+    _dials_autocomplete_values="absorption_correction. apply= centroid_definition= create_profile_model= d_max= debug_log= deconvolution= delete_shoeboxes= detector_gain= during= exclude_images= filename= fit_method= fitting= force= force_static= grid_method= grid_size= include_bad_reference= input. integration. log= margin= mask= max_memory_usage= method= min_partition_size= model= njobs= nproc= number_of_partitions= output. overall= padding= per_degree= phil= prediction. profile. report= sampling. scan_range= scan_step= scan_varying= select= separate_files= sigma_b= sigma_m= sigma_m_algorithm= significance_filter. size= smart_sigmas= split_experiments= units= use_dynamic_mask= verbosity= within_spot_sigmas=";;
+ esac
+}

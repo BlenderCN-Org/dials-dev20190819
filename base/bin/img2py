@@ -1,0 +1,5 @@
+#!/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/bin/python
+
+from wx.tools.img2py import main
+main()
+

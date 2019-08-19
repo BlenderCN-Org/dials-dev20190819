@@ -1,0 +1,93 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  outlier_display)
+   _dials_autocomplete_values="outliers inliers";;
+
+  reverse_phi)
+   _dials_autocomplete_values="true false";;
+
+  black_background)
+   _dials_autocomplete_values="true false";;
+
+  display)
+   _dials_autocomplete_values="all unindexed indexed integrated";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  black_background=)
+   _dials_autocomplete_values="black_background=";;
+
+  n_solutions=)
+   _dials_autocomplete_values="basis_vector_search.n_solutions=";;
+
+  experiment_ids=)
+   _dials_autocomplete_values="experiment_ids=";;
+
+  reverse_phi=)
+   _dials_autocomplete_values="reverse_phi=";;
+
+  beam_centre=)
+   _dials_autocomplete_values="beam_centre=";;
+
+  z_max=)
+   _dials_autocomplete_values="z_max=";;
+
+  size_inches=)
+   _dials_autocomplete_values="plot.size_inches=";;
+
+  outlier_display=)
+   _dials_autocomplete_values="outlier_display=";;
+
+  z_min=)
+   _dials_autocomplete_values="z_min=";;
+
+  experiments=)
+   _dials_autocomplete_values="input.experiments=";;
+
+  d_min=)
+   _dials_autocomplete_values="d_min=";;
+
+  reflections=)
+   _dials_autocomplete_values="input.reflections=";;
+
+  n_min=)
+   _dials_autocomplete_values="n_min=";;
+
+  marker_size=)
+   _dials_autocomplete_values="marker_size=";;
+
+  n_max=)
+   _dials_autocomplete_values="n_max=";;
+
+  partiality_max=)
+   _dials_autocomplete_values="partiality_max=";;
+
+  partiality_min=)
+   _dials_autocomplete_values="partiality_min=";;
+
+  display=)
+   _dials_autocomplete_values="display=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.reflections=";;
+
+  *)
+    _dials_autocomplete_values="basis_vector_search.n_solutions= beam_centre= black_background= d_min= display= experiment_ids= experiments= input. marker_size= n_max= n_min= n_solutions= outlier_display= partiality_max= partiality_min= plot.size_inches= reflections= reverse_phi= size_inches= z_max= z_min=";;
+ esac
+}

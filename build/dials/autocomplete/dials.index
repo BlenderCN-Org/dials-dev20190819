@@ -1,0 +1,465 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  indexing.max_cell_estimation.filter_overlaps)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.separate_experiments)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.compose_model_per)
+   _dials_autocomplete_values="image block";;
+
+  indexing.stills.refine_candidates_with_known_symmetry)
+   _dials_autocomplete_values="true false";;
+
+  indexing.basis_vector_combinations.solution_scorer)
+   _dials_autocomplete_values="filter weighted";;
+
+  refinement.parameterisation.beam.fix)
+   _dials_autocomplete_values="all in_spindle_plane out_spindle_plane wavelength";;
+
+  indexing.optimise_initial_basis_vectors)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.unit_cell.force_static)
+   _dials_autocomplete_values="true false";;
+
+  indexing.stills.candidate_outlier_rejection)
+   _dials_autocomplete_values="true false";;
+
+  indexing.debug)
+   _dials_autocomplete_values="true false";;
+
+  indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.method)
+   _dials_autocomplete_values="ward";;
+
+  refinement.refinery.journal.track_step)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.set_scan_varying_errors)
+   _dials_autocomplete_values="true false";;
+
+  indexing.combine_scans)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.fix)
+   _dials_autocomplete_values="all cell orientation";;
+
+  indexing.method)
+   _dials_autocomplete_values="fft3d fft1d real_space_grid_search";;
+
+  indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.metric)
+   _dials_autocomplete_values="euclidean";;
+
+  indexing.multiple_lattice_search.cluster_analysis_search)
+   _dials_autocomplete_values="true false";;
+
+  indexing.fft3d.peak_search)
+   _dials_autocomplete_values="flood_fill clean";;
+
+  refinement.reflections.outlier.algorithm)
+   _dials_autocomplete_values="null auto mcd tukey sauter_poon";;
+
+  refinement.parameterisation.goniometer.fix)
+   _dials_autocomplete_values="all in_beam_plane out_beam_plane";;
+
+  refinement.parameterisation.detector.fix)
+   _dials_autocomplete_values="all position orientation";;
+
+  indexing.stills.refine_all_candidates)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.sauter_poon.verbose)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.separate_blocks)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.separate_panels)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.spherical_relp_model)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.orientation.force_static)
+   _dials_autocomplete_values="true false";;
+
+  indexing.index_assignment.method)
+   _dials_autocomplete_values="simple local";;
+
+  refinement.refinery.journal.track_condition_number)
+   _dials_autocomplete_values="true false";;
+
+  indexing.joint_indexing)
+   _dials_autocomplete_values="true false";;
+
+  refinement.refinery.journal.track_parameter_correlation)
+   _dials_autocomplete_values="true false";;
+
+  indexing.basis_vector_combinations.filter.check_doubled_cell)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.weighting_strategy.override)
+   _dials_autocomplete_values="statistical stills constant external_deltapsi";;
+
+  refinement.parameterisation.auto_reduction.action)
+   _dials_autocomplete_values="fail fix remove";;
+
+  indexing.refinement_protocol.disable_unit_cell_volume_sanity_check)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.goniometer.force_static)
+   _dials_autocomplete_values="true false";;
+
+  indexing.max_cell_estimation.filter_ice)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.detector.panels)
+   _dials_autocomplete_values="automatic single multiple hierarchical";;
+
+  refinement.parameterisation.treat_single_image_as_still)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.auto_reduction.detector_reduce)
+   _dials_autocomplete_values="true false";;
+
+  output.split_experiments)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.debug_centroid_analysis)
+   _dials_autocomplete_values="true false";;
+
+  indexing.refinement_protocol.mode)
+   _dials_autocomplete_values="refine_shells repredict_only None";;
+
+  refinement.refinery.engine)
+   _dials_autocomplete_values="SimpleLBFGS LBFGScurvs GaussNewton LevMar SparseLevMar";;
+
+  refinement.refinery.journal.track_out_of_sample_rmsd)
+   _dials_autocomplete_values="true false";;
+
+  indexing.multiple_lattice_search.cluster_analysis.method)
+   _dials_autocomplete_values="dbscan hcluster";;
+
+  refinement.refinery.journal.track_gradient)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.scan_varying)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.detector.force_static)
+   _dials_autocomplete_values="true false";;
+
+  indexing.multiple_lattice_search.cluster_analysis.hcluster.cutoff_criterion)
+   _dials_autocomplete_values="distance inconsistent";;
+
+  refinement.parameterisation.beam.force_static)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.target)
+   _dials_autocomplete_values="mean low_memory_mean median";;
+
+  indexing.max_cell_estimation.histogram_binning)
+   _dials_autocomplete_values="linear log";;
+
+  refinement.parameterisation.sparse)
+   _dials_autocomplete_values="true false";;
+
+  refinement.target.rmsd_cutoff)
+   _dials_autocomplete_values="fraction_of_bin_size absolute";;
+
+  indexing.stills.indexer)
+   _dials_autocomplete_values="Auto stills sweeps";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  d_min_step=)
+   _dials_autocomplete_values="indexing.refinement_protocol.d_min_step=";;
+
+  hkl_tolerance=)
+   _dials_autocomplete_values="indexing.index_assignment.simple.hkl_tolerance=";;
+
+  ewald_proximal_volume_max=)
+   _dials_autocomplete_values="indexing.stills.ewald_proximal_volume_max=";;
+
+  cutoff_criterion=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.hcluster.cutoff_criterion=";;
+
+  rmsd_min_px=)
+   _dials_autocomplete_values="indexing.stills.rmsd_min_px=";;
+
+  track_gradient=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_gradient=";;
+
+  track_step=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_step=";;
+
+  name=)
+   _dials_autocomplete_values="indexing.stills.isoforms.name=";;
+
+  verbosity=)
+   _dials_autocomplete_values="indexing.refinement_protocol.verbosity=";;
+
+  min_samples=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.dbscan.min_samples=";;
+
+  joint_indexing=)
+   _dials_autocomplete_values="indexing.joint_indexing=";;
+
+  beam_restraint=)
+   _dials_autocomplete_values="indexing.stills.isoforms.beam_restraint=";;
+
+  cell=)
+   _dials_autocomplete_values="indexing.stills.isoforms.cell=";;
+
+  d_min_final=)
+   _dials_autocomplete_values="indexing.refinement_protocol.d_min_final=";;
+
+  track_out_of_sample_rmsd=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_out_of_sample_rmsd=";;
+
+  set_scan_varying_errors=)
+   _dials_autocomplete_values="refinement.parameterisation.set_scan_varying_errors=";;
+
+  track_condition_number=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_condition_number=";;
+
+  rmsd_target_mm=)
+   _dials_autocomplete_values="indexing.stills.isoforms.rmsd_target_mm=";;
+
+  cutoff=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.hcluster.cutoff=";;
+
+  refine_all_candidates=)
+   _dials_autocomplete_values="indexing.stills.refine_all_candidates=";;
+
+  scan_varying=)
+   _dials_autocomplete_values="refinement.parameterisation.scan_varying=";;
+
+  grid_search_scope=)
+   _dials_autocomplete_values="indexing.check_misindexing.grid_search_scope=";;
+
+  space_group=)
+   _dials_autocomplete_values="indexing.known_symmetry.space_group=";;
+
+  unindexed_reflections=)
+   _dials_autocomplete_values="output.unindexed_reflections=";;
+
+  split_experiments=)
+   _dials_autocomplete_values="output.split_experiments=";;
+
+  ewald_proximity_resolution_cutoff=)
+   _dials_autocomplete_values="indexing.stills.ewald_proximity_resolution_cutoff=";;
+
+  intersection_union_ratio_cutoff=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.intersection_union_ratio_cutoff=";;
+
+  d_min_start=)
+   _dials_autocomplete_values="indexing.refinement_protocol.d_min_start=";;
+
+  unit_cell=)
+   _dials_autocomplete_values="indexing.known_symmetry.unit_cell=";;
+
+  lookup_symbol=)
+   _dials_autocomplete_values="indexing.stills.isoforms.lookup_symbol=";;
+
+  target=)
+   _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.target=";;
+
+  track_parameter_correlation=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_parameter_correlation=";;
+
+  values=)
+   _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.values=";;
+
+  n_macro_cycles=)
+   _dials_autocomplete_values="indexing.refinement_protocol.n_macro_cycles=";;
+
+  metric=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.metric=";;
+
+  image_range=)
+   _dials_autocomplete_values="indexing.image_range=";;
+
+  d_min=)
+   _dials_autocomplete_values="indexing.fft3d.reciprocal_space_grid.d_min=";;
+
+  min_cluster_size=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.min_cluster_size=";;
+
+  algorithm=)
+   _dials_autocomplete_values="refinement.reflections.outlier.algorithm=";;
+
+  eps=)
+   _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.dbscan.eps=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.id= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.sigmas= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.target=";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.id= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.sigmas= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.values=";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group. refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.";;
+
+  refinement.parameterisation.crystal.unit_cell.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.smoother.absolute_num_intervals= refinement.parameterisation.crystal.unit_cell.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.crystal.unit_cell.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.constraints.id= refinement.parameterisation.crystal.unit_cell.constraints.parameter=";;
+
+  refinement.parameterisation.crystal.unit_cell.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.constraints. refinement.parameterisation.crystal.unit_cell.fix_list= refinement.parameterisation.crystal.unit_cell.force_static= refinement.parameterisation.crystal.unit_cell.restraints. refinement.parameterisation.crystal.unit_cell.smoother.";;
+
+  refinement.parameterisation.crystal.orientation.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.orientation.smoother.absolute_num_intervals= refinement.parameterisation.crystal.orientation.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.crystal.orientation.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.orientation.constraints.id= refinement.parameterisation.crystal.orientation.constraints.parameter=";;
+
+  refinement.parameterisation.crystal.orientation.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.orientation.constraints. refinement.parameterisation.crystal.orientation.fix_list= refinement.parameterisation.crystal.orientation.force_static= refinement.parameterisation.crystal.orientation.smoother.";;
+
+  refinement.parameterisation.crystal.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.fix= refinement.parameterisation.crystal.orientation. refinement.parameterisation.crystal.unit_cell.";;
+
+  refinement.parameterisation.goniometer.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.goniometer.smoother.absolute_num_intervals= refinement.parameterisation.goniometer.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.goniometer.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.goniometer.constraints.id= refinement.parameterisation.goniometer.constraints.parameter=";;
+
+  refinement.parameterisation.goniometer.*)
+    _dials_autocomplete_values="refinement.parameterisation.goniometer.constraints. refinement.parameterisation.goniometer.fix= refinement.parameterisation.goniometer.fix_list= refinement.parameterisation.goniometer.force_static= refinement.parameterisation.goniometer.smoother.";;
+
+  refinement.parameterisation.beam.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.beam.smoother.absolute_num_intervals= refinement.parameterisation.beam.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.beam.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.beam.constraints.id= refinement.parameterisation.beam.constraints.parameter=";;
+
+  refinement.parameterisation.beam.*)
+    _dials_autocomplete_values="refinement.parameterisation.beam.constraints. refinement.parameterisation.beam.fix= refinement.parameterisation.beam.fix_list= refinement.parameterisation.beam.force_static= refinement.parameterisation.beam.smoother.";;
+
+  refinement.parameterisation.detector.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.detector.smoother.absolute_num_intervals= refinement.parameterisation.detector.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.detector.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.detector.constraints.id= refinement.parameterisation.detector.constraints.parameter=";;
+
+  refinement.parameterisation.detector.*)
+    _dials_autocomplete_values="refinement.parameterisation.detector.constraints. refinement.parameterisation.detector.fix= refinement.parameterisation.detector.fix_list= refinement.parameterisation.detector.force_static= refinement.parameterisation.detector.hierarchy_level= refinement.parameterisation.detector.panels= refinement.parameterisation.detector.smoother.";;
+
+  refinement.parameterisation.auto_reduction.*)
+    _dials_autocomplete_values="refinement.parameterisation.auto_reduction.action= refinement.parameterisation.auto_reduction.detector_reduce= refinement.parameterisation.auto_reduction.detector_reduce_list= refinement.parameterisation.auto_reduction.min_nref_per_parameter=";;
+
+  refinement.parameterisation.*)
+    _dials_autocomplete_values="refinement.parameterisation.auto_reduction. refinement.parameterisation.beam. refinement.parameterisation.block_width= refinement.parameterisation.compose_model_per= refinement.parameterisation.crystal. refinement.parameterisation.debug_centroid_analysis= refinement.parameterisation.detector. refinement.parameterisation.goniometer. refinement.parameterisation.scan_varying= refinement.parameterisation.set_scan_varying_errors= refinement.parameterisation.sparse= refinement.parameterisation.spherical_relp_model= refinement.parameterisation.treat_single_image_as_still=";;
+
+  refinement.refinery.journal.*)
+    _dials_autocomplete_values="refinement.refinery.journal.track_condition_number= refinement.refinery.journal.track_gradient= refinement.refinery.journal.track_out_of_sample_rmsd= refinement.refinery.journal.track_parameter_correlation= refinement.refinery.journal.track_step=";;
+
+  refinement.refinery.*)
+    _dials_autocomplete_values="refinement.refinery.engine= refinement.refinery.journal. refinement.refinery.log= refinement.refinery.max_iterations=";;
+
+  refinement.reflections.weighting_strategy.*)
+    _dials_autocomplete_values="refinement.reflections.weighting_strategy.constants= refinement.reflections.weighting_strategy.delpsi_constant= refinement.reflections.weighting_strategy.override=";;
+
+  refinement.reflections.outlier.mcd.*)
+    _dials_autocomplete_values="refinement.reflections.outlier.mcd.alpha= refinement.reflections.outlier.mcd.k1= refinement.reflections.outlier.mcd.k2= refinement.reflections.outlier.mcd.k3= refinement.reflections.outlier.mcd.max_n_groups= refinement.reflections.outlier.mcd.min_group_size= refinement.reflections.outlier.mcd.n_trials= refinement.reflections.outlier.mcd.threshold_probability=";;
+
+  refinement.reflections.outlier.sauter_poon.*)
+    _dials_autocomplete_values="refinement.reflections.outlier.sauter_poon.pdf= refinement.reflections.outlier.sauter_poon.px_sz= refinement.reflections.outlier.sauter_poon.verbose=";;
+
+  refinement.reflections.outlier.*)
+    _dials_autocomplete_values="refinement.reflections.outlier.algorithm= refinement.reflections.outlier.block_width= refinement.reflections.outlier.mcd. refinement.reflections.outlier.minimum_number_of_reflections= refinement.reflections.outlier.sauter_poon. refinement.reflections.outlier.separate_blocks= refinement.reflections.outlier.separate_experiments= refinement.reflections.outlier.separate_panels= refinement.reflections.outlier.tukey.iqr_multiplier=";;
+
+  refinement.reflections.*)
+    _dials_autocomplete_values="refinement.reflections.close_to_spindle_cutoff= refinement.reflections.maximum_sample_size= refinement.reflections.minimum_sample_size= refinement.reflections.outlier. refinement.reflections.random_seed= refinement.reflections.reflections_per_degree= refinement.reflections.trim_scan_edges= refinement.reflections.weighting_strategy.";;
+
+  refinement.target.*)
+    _dials_autocomplete_values="refinement.target.absolute_cutoffs= refinement.target.bin_size_fraction= refinement.target.gradient_calculation_blocksize= refinement.target.rmsd_cutoff=";;
+
+  refinement.*)
+    _dials_autocomplete_values="refinement.mp.nproc= refinement.parameterisation. refinement.refinery. refinement.reflections. refinement.target.";;
+
+  output.*)
+    _dials_autocomplete_values="output.experiments= output.log= output.reflections= output.split_experiments= output.unindexed_reflections=";;
+
+  indexing.fft3d.reciprocal_space_grid.*)
+    _dials_autocomplete_values="indexing.fft3d.reciprocal_space_grid.d_min= indexing.fft3d.reciprocal_space_grid.n_points=";;
+
+  indexing.fft3d.*)
+    _dials_autocomplete_values="indexing.fft3d.b_iso= indexing.fft3d.peak_search= indexing.fft3d.peak_volume_cutoff= indexing.fft3d.reciprocal_space_grid. indexing.fft3d.rmsd_cutoff=";;
+
+  indexing.multiple_lattice_search.cluster_analysis.dbscan.*)
+    _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.dbscan.eps= indexing.multiple_lattice_search.cluster_analysis.dbscan.min_samples=";;
+
+  indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.*)
+    _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.method= indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.metric=";;
+
+  indexing.multiple_lattice_search.cluster_analysis.hcluster.*)
+    _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.hcluster.cutoff= indexing.multiple_lattice_search.cluster_analysis.hcluster.cutoff_criterion= indexing.multiple_lattice_search.cluster_analysis.hcluster.linkage.";;
+
+  indexing.multiple_lattice_search.cluster_analysis.*)
+    _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis.dbscan. indexing.multiple_lattice_search.cluster_analysis.hcluster. indexing.multiple_lattice_search.cluster_analysis.intersection_union_ratio_cutoff= indexing.multiple_lattice_search.cluster_analysis.method= indexing.multiple_lattice_search.cluster_analysis.min_cluster_size=";;
+
+  indexing.multiple_lattice_search.*)
+    _dials_autocomplete_values="indexing.multiple_lattice_search.cluster_analysis. indexing.multiple_lattice_search.cluster_analysis_search= indexing.multiple_lattice_search.max_lattices= indexing.multiple_lattice_search.minimum_angular_separation= indexing.multiple_lattice_search.recycle_unindexed_reflections_cutoff=";;
+
+  indexing.basis_vector_combinations.filter.*)
+    _dials_autocomplete_values="indexing.basis_vector_combinations.filter.check_doubled_cell= indexing.basis_vector_combinations.filter.likelihood_cutoff= indexing.basis_vector_combinations.filter.n_indexed_cutoff= indexing.basis_vector_combinations.filter.volume_cutoff=";;
+
+  indexing.basis_vector_combinations.weighted.*)
+    _dials_autocomplete_values="indexing.basis_vector_combinations.weighted.n_indexed_weight= indexing.basis_vector_combinations.weighted.power= indexing.basis_vector_combinations.weighted.rmsd_weight= indexing.basis_vector_combinations.weighted.volume_weight=";;
+
+  indexing.basis_vector_combinations.*)
+    _dials_autocomplete_values="indexing.basis_vector_combinations.filter. indexing.basis_vector_combinations.max_combinations= indexing.basis_vector_combinations.max_refine= indexing.basis_vector_combinations.solution_scorer= indexing.basis_vector_combinations.sys_absent_threshold= indexing.basis_vector_combinations.weighted.";;
+
+  indexing.index_assignment.local.*)
+    _dials_autocomplete_values="indexing.index_assignment.local.delta= indexing.index_assignment.local.epsilon= indexing.index_assignment.local.l_min= indexing.index_assignment.local.nearest_neighbours=";;
+
+  indexing.index_assignment.*)
+    _dials_autocomplete_values="indexing.index_assignment.local. indexing.index_assignment.method= indexing.index_assignment.simple.hkl_tolerance=";;
+
+  indexing.refinement_protocol.*)
+    _dials_autocomplete_values="indexing.refinement_protocol.d_min_final= indexing.refinement_protocol.d_min_start= indexing.refinement_protocol.d_min_step= indexing.refinement_protocol.disable_unit_cell_volume_sanity_check= indexing.refinement_protocol.mode= indexing.refinement_protocol.n_macro_cycles= indexing.refinement_protocol.verbosity=";;
+
+  indexing.stills.isoforms.*)
+    _dials_autocomplete_values="indexing.stills.isoforms.beam_restraint= indexing.stills.isoforms.cell= indexing.stills.isoforms.lookup_symbol= indexing.stills.isoforms.name= indexing.stills.isoforms.rmsd_target_mm=";;
+
+  indexing.stills.*)
+    _dials_autocomplete_values="indexing.stills.candidate_outlier_rejection= indexing.stills.ewald_proximal_volume_max= indexing.stills.ewald_proximity_resolution_cutoff= indexing.stills.indexer= indexing.stills.isoforms. indexing.stills.refine_all_candidates= indexing.stills.refine_candidates_with_known_symmetry= indexing.stills.rmsd_min_px=";;
+
+  indexing.max_cell_estimation.*)
+    _dials_autocomplete_values="indexing.max_cell_estimation.filter_ice= indexing.max_cell_estimation.filter_overlaps= indexing.max_cell_estimation.histogram_binning= indexing.max_cell_estimation.max_height_fraction= indexing.max_cell_estimation.multiplier= indexing.max_cell_estimation.nearest_neighbor_percentile= indexing.max_cell_estimation.nn_per_bin= indexing.max_cell_estimation.overlaps_border= indexing.max_cell_estimation.step_size=";;
+
+  indexing.known_symmetry.*)
+    _dials_autocomplete_values="indexing.known_symmetry.absolute_angle_tolerance= indexing.known_symmetry.max_delta= indexing.known_symmetry.relative_length_tolerance= indexing.known_symmetry.space_group= indexing.known_symmetry.unit_cell=";;
+
+  indexing.*)
+    _dials_autocomplete_values="indexing.basis_vector_combinations. indexing.check_misindexing.grid_search_scope= indexing.combine_scans= indexing.debug= indexing.fft1d.characteristic_grid= indexing.fft3d. indexing.image_range= indexing.index_assignment. indexing.joint_indexing= indexing.known_symmetry. indexing.max_cell= indexing.max_cell_estimation. indexing.method= indexing.min_cell= indexing.min_cell_volume= indexing.mm_search_scope= indexing.multiple_lattice_search. indexing.nproc= indexing.optimise_initial_basis_vectors= indexing.real_space_grid_search.characteristic_grid= indexing.refinement_protocol. indexing.sigma_phi_deg= indexing.stills. indexing.wide_search_binning=";;
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.reflections=";;
+
+  *)
+    _dials_autocomplete_values="algorithm= beam_restraint= cell= cutoff= cutoff_criterion= d_min= d_min_final= d_min_start= d_min_step= eps= ewald_proximal_volume_max= ewald_proximity_resolution_cutoff= grid_search_scope= hkl_tolerance= image_range= indexing. input. intersection_union_ratio_cutoff= joint_indexing= lookup_symbol= metric= min_cluster_size= min_samples= n_macro_cycles= name= output. refine_all_candidates= refinement. rmsd_min_px= rmsd_target_mm= scan_varying= set_scan_varying_errors= space_group= split_experiments= target= track_condition_number= track_gradient= track_out_of_sample_rmsd= track_parameter_correlation= track_step= unindexed_reflections= unit_cell= values= verbosity=";;
+ esac
+}

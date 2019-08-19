@@ -1,0 +1,258 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  refinement.refinery.journal.track_gradient)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.compose_model_per)
+   _dials_autocomplete_values="image block";;
+
+  refinement.reflections.outlier.separate_blocks)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.unit_cell.force_static)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.scan_varying)
+   _dials_autocomplete_values="true false";;
+
+  refinement.refinery.journal.track_step)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.set_scan_varying_errors)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.fix)
+   _dials_autocomplete_values="all cell orientation";;
+
+  refinement.parameterisation.goniometer.force_static)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.algorithm)
+   _dials_autocomplete_values="null auto mcd tukey sauter_poon";;
+
+  refinement.parameterisation.goniometer.fix)
+   _dials_autocomplete_values="all in_beam_plane out_beam_plane";;
+
+  refinement.parameterisation.detector.fix)
+   _dials_autocomplete_values="all position orientation";;
+
+  refinement.reflections.outlier.sauter_poon.verbose)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.separate_panels)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.spherical_relp_model)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.outlier.separate_experiments)
+   _dials_autocomplete_values="true false";;
+
+  refinement.refinery.journal.track_condition_number)
+   _dials_autocomplete_values="true false";;
+
+  refinement.refinery.journal.track_parameter_correlation)
+   _dials_autocomplete_values="true false";;
+
+  refinement.reflections.weighting_strategy.override)
+   _dials_autocomplete_values="statistical stills constant external_deltapsi";;
+
+  refinement.parameterisation.auto_reduction.action)
+   _dials_autocomplete_values="fail fix remove";;
+
+  refinement.parameterisation.treat_single_image_as_still)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.detector.panels)
+   _dials_autocomplete_values="automatic single multiple hierarchical";;
+
+  refinement.parameterisation.auto_reduction.detector_reduce)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.debug_centroid_analysis)
+   _dials_autocomplete_values="true false";;
+
+  refinement.refinery.engine)
+   _dials_autocomplete_values="SimpleLBFGS LBFGScurvs GaussNewton LevMar SparseLevMar";;
+
+  refinement.refinery.journal.track_out_of_sample_rmsd)
+   _dials_autocomplete_values="true false";;
+
+  output.include_unused_reflections)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.beam.fix)
+   _dials_autocomplete_values="all in_spindle_plane out_spindle_plane wavelength";;
+
+  refinement.parameterisation.detector.force_static)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.beam.force_static)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.target)
+   _dials_autocomplete_values="mean low_memory_mean median";;
+
+  refinement.parameterisation.crystal.orientation.force_static)
+   _dials_autocomplete_values="true false";;
+
+  refinement.parameterisation.sparse)
+   _dials_autocomplete_values="true false";;
+
+  refinement.target.rmsd_cutoff)
+   _dials_autocomplete_values="fraction_of_bin_size absolute";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  scan_varying=)
+   _dials_autocomplete_values="refinement.parameterisation.scan_varying=";;
+
+  track_out_of_sample_rmsd=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_out_of_sample_rmsd=";;
+
+  values=)
+   _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.values=";;
+
+  track_gradient=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_gradient=";;
+
+  track_step=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_step=";;
+
+  target=)
+   _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.target=";;
+
+  algorithm=)
+   _dials_autocomplete_values="refinement.reflections.outlier.algorithm=";;
+
+  track_parameter_correlation=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_parameter_correlation=";;
+
+  set_scan_varying_errors=)
+   _dials_autocomplete_values="refinement.parameterisation.set_scan_varying_errors=";;
+
+  track_condition_number=)
+   _dials_autocomplete_values="refinement.refinery.journal.track_condition_number=";;
+
+  n_static_macrocycles=)
+   _dials_autocomplete_values="n_static_macrocycles=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  output.correlation_plot.*)
+    _dials_autocomplete_values="output.correlation_plot.col_select= output.correlation_plot.filename= output.correlation_plot.steps=";;
+
+  output.*)
+    _dials_autocomplete_values="output.centroids= output.correlation_plot. output.experiments= output.history= output.include_unused_reflections= output.log= output.matches= output.parameter_table= output.reflections=";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.id= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.sigmas= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group.target=";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.id= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.sigmas= refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.values=";;
+
+  refinement.parameterisation.crystal.unit_cell.restraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.restraints.tie_to_group. refinement.parameterisation.crystal.unit_cell.restraints.tie_to_target.";;
+
+  refinement.parameterisation.crystal.unit_cell.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.smoother.absolute_num_intervals= refinement.parameterisation.crystal.unit_cell.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.crystal.unit_cell.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.constraints.id= refinement.parameterisation.crystal.unit_cell.constraints.parameter=";;
+
+  refinement.parameterisation.crystal.unit_cell.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.unit_cell.constraints. refinement.parameterisation.crystal.unit_cell.fix_list= refinement.parameterisation.crystal.unit_cell.force_static= refinement.parameterisation.crystal.unit_cell.restraints. refinement.parameterisation.crystal.unit_cell.smoother.";;
+
+  refinement.parameterisation.crystal.orientation.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.orientation.smoother.absolute_num_intervals= refinement.parameterisation.crystal.orientation.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.crystal.orientation.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.orientation.constraints.id= refinement.parameterisation.crystal.orientation.constraints.parameter=";;
+
+  refinement.parameterisation.crystal.orientation.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.orientation.constraints. refinement.parameterisation.crystal.orientation.fix_list= refinement.parameterisation.crystal.orientation.force_static= refinement.parameterisation.crystal.orientation.smoother.";;
+
+  refinement.parameterisation.crystal.*)
+    _dials_autocomplete_values="refinement.parameterisation.crystal.fix= refinement.parameterisation.crystal.orientation. refinement.parameterisation.crystal.unit_cell.";;
+
+  refinement.parameterisation.goniometer.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.goniometer.smoother.absolute_num_intervals= refinement.parameterisation.goniometer.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.goniometer.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.goniometer.constraints.id= refinement.parameterisation.goniometer.constraints.parameter=";;
+
+  refinement.parameterisation.goniometer.*)
+    _dials_autocomplete_values="refinement.parameterisation.goniometer.constraints. refinement.parameterisation.goniometer.fix= refinement.parameterisation.goniometer.fix_list= refinement.parameterisation.goniometer.force_static= refinement.parameterisation.goniometer.smoother.";;
+
+  refinement.parameterisation.beam.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.beam.smoother.absolute_num_intervals= refinement.parameterisation.beam.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.beam.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.beam.constraints.id= refinement.parameterisation.beam.constraints.parameter=";;
+
+  refinement.parameterisation.beam.*)
+    _dials_autocomplete_values="refinement.parameterisation.beam.constraints. refinement.parameterisation.beam.fix= refinement.parameterisation.beam.fix_list= refinement.parameterisation.beam.force_static= refinement.parameterisation.beam.smoother.";;
+
+  refinement.parameterisation.detector.smoother.*)
+    _dials_autocomplete_values="refinement.parameterisation.detector.smoother.absolute_num_intervals= refinement.parameterisation.detector.smoother.interval_width_degrees=";;
+
+  refinement.parameterisation.detector.constraints.*)
+    _dials_autocomplete_values="refinement.parameterisation.detector.constraints.id= refinement.parameterisation.detector.constraints.parameter=";;
+
+  refinement.parameterisation.detector.*)
+    _dials_autocomplete_values="refinement.parameterisation.detector.constraints. refinement.parameterisation.detector.fix= refinement.parameterisation.detector.fix_list= refinement.parameterisation.detector.force_static= refinement.parameterisation.detector.hierarchy_level= refinement.parameterisation.detector.panels= refinement.parameterisation.detector.smoother.";;
+
+  refinement.parameterisation.auto_reduction.*)
+    _dials_autocomplete_values="refinement.parameterisation.auto_reduction.action= refinement.parameterisation.auto_reduction.detector_reduce= refinement.parameterisation.auto_reduction.detector_reduce_list= refinement.parameterisation.auto_reduction.min_nref_per_parameter=";;
+
+  refinement.parameterisation.*)
+    _dials_autocomplete_values="refinement.parameterisation.auto_reduction. refinement.parameterisation.beam. refinement.parameterisation.block_width= refinement.parameterisation.compose_model_per= refinement.parameterisation.crystal. refinement.parameterisation.debug_centroid_analysis= refinement.parameterisation.detector. refinement.parameterisation.goniometer. refinement.parameterisation.scan_varying= refinement.parameterisation.set_scan_varying_errors= refinement.parameterisation.sparse= refinement.parameterisation.spherical_relp_model= refinement.parameterisation.treat_single_image_as_still=";;
+
+  refinement.refinery.journal.*)
+    _dials_autocomplete_values="refinement.refinery.journal.track_condition_number= refinement.refinery.journal.track_gradient= refinement.refinery.journal.track_out_of_sample_rmsd= refinement.refinery.journal.track_parameter_correlation= refinement.refinery.journal.track_step=";;
+
+  refinement.refinery.*)
+    _dials_autocomplete_values="refinement.refinery.engine= refinement.refinery.journal. refinement.refinery.log= refinement.refinery.max_iterations=";;
+
+  refinement.reflections.weighting_strategy.*)
+    _dials_autocomplete_values="refinement.reflections.weighting_strategy.constants= refinement.reflections.weighting_strategy.delpsi_constant= refinement.reflections.weighting_strategy.override=";;
+
+  refinement.reflections.outlier.mcd.*)
+    _dials_autocomplete_values="refinement.reflections.outlier.mcd.alpha= refinement.reflections.outlier.mcd.k1= refinement.reflections.outlier.mcd.k2= refinement.reflections.outlier.mcd.k3= refinement.reflections.outlier.mcd.max_n_groups= refinement.reflections.outlier.mcd.min_group_size= refinement.reflections.outlier.mcd.n_trials= refinement.reflections.outlier.mcd.threshold_probability=";;
+
+  refinement.reflections.outlier.sauter_poon.*)
+    _dials_autocomplete_values="refinement.reflections.outlier.sauter_poon.pdf= refinement.reflections.outlier.sauter_poon.px_sz= refinement.reflections.outlier.sauter_poon.verbose=";;
+
+  refinement.reflections.outlier.*)
+    _dials_autocomplete_values="refinement.reflections.outlier.algorithm= refinement.reflections.outlier.block_width= refinement.reflections.outlier.mcd. refinement.reflections.outlier.minimum_number_of_reflections= refinement.reflections.outlier.sauter_poon. refinement.reflections.outlier.separate_blocks= refinement.reflections.outlier.separate_experiments= refinement.reflections.outlier.separate_panels= refinement.reflections.outlier.tukey.iqr_multiplier=";;
+
+  refinement.reflections.*)
+    _dials_autocomplete_values="refinement.reflections.close_to_spindle_cutoff= refinement.reflections.maximum_sample_size= refinement.reflections.minimum_sample_size= refinement.reflections.outlier. refinement.reflections.random_seed= refinement.reflections.reflections_per_degree= refinement.reflections.trim_scan_edges= refinement.reflections.weighting_strategy.";;
+
+  refinement.target.*)
+    _dials_autocomplete_values="refinement.target.absolute_cutoffs= refinement.target.bin_size_fraction= refinement.target.gradient_calculation_blocksize= refinement.target.rmsd_cutoff=";;
+
+  refinement.*)
+    _dials_autocomplete_values="refinement.mp.nproc= refinement.parameterisation. refinement.refinery. refinement.reflections. refinement.target.";;
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.reflections=";;
+
+  *)
+    _dials_autocomplete_values="algorithm= input. n_static_macrocycles= output. refinement. scan_varying= set_scan_varying_errors= target= track_condition_number= track_gradient= track_out_of_sample_rmsd= track_parameter_correlation= track_step= values=";;
+ esac
+}

@@ -1,0 +1,14 @@
+
+#
+# Auto-generated, do not change'
+#
+[Icon Theme]
+Name=Hicolor
+Comment=Fallback icon theme
+Hidden=true
+Directories=48x48/filesystems
+
+[48x48/filesystems]
+Size=48
+Context=FileSystems
+Type=Threshold

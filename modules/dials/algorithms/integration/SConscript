@@ -1,0 +1,42 @@
+Import("env")
+
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_ext",
+    source=["boost_python/corrections.cc", "boost_python/integration_ext.cc"],
+    LIBS=env["LIBS"],
+)
+
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_integrator_ext",
+    source=["boost_python/integration_integrator_ext.cc"],
+    LIBS=env["LIBS"],
+)
+
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_parallel_integrator_ext",
+    source=["boost_python/parallel_integrator_ext.cc"],
+    LIBS=env["LIBS"],
+)
+
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_sum_ext",
+    source=["sum/boost_python/summation.cc", "sum/boost_python/integration_sum_ext.cc"],
+    LIBS=env["LIBS"],
+)
+
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_fit_ext",
+    source=["fit/boost_python/ext.cc"],
+    LIBS=env["LIBS"],
+)
+
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_bayes_ext",
+    source=["bayes/boost_python/ext.cc"],
+    LIBS=env["LIBS"],
+)
+env.SharedLibrary(
+    target="#/lib/dials_algorithms_integration_kapton_ext",
+    source=["boost_python/kapton_ext.cc"],
+    LIBS=env["LIBS"],
+)

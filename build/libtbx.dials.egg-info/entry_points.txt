@@ -1,0 +1,13 @@
+[dials.index.basis_vector_search_strategy]
+fft1d = dials.algorithms.indexing.basis_vector_search.strategies:FFT1D
+fft3d = dials.algorithms.indexing.basis_vector_search.strategies:FFT3D
+real_space_grid_search = dials.algorithms.indexing.basis_vector_search.strategies:RealSpaceGridSearch
+
+[dxtbx.profile_model]
+gaussian_rs = dials.extensions.gaussian_rs_profile_model_ext:GaussianRSProfileModelExt
+
+[dxtbx.scaling_model_ext]
+KB = dials.algorithms.scaling.model.scaling_model_ext:KBScalingModelExt
+array = dials.algorithms.scaling.model.scaling_model_ext:ArrayScalingModelExt
+physical = dials.algorithms.scaling.model.scaling_model_ext:PhysicalScalingModelExt
+

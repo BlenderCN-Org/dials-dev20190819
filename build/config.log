@@ -1,0 +1,121 @@
+file /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/boost_adaptbx/SConscript,line 108:
+	Configure(confdir = .sconf_temp)
+scons: Configure: ".sconf_temp/conftest_0.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_0.cpp <-
+  |  |#include <iostream>
+  |
+scons: Configure: ".sconf_temp/conftest_0.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_0.o -c -pthread -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/build/include -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include/python2.7 .sconf_temp/conftest_0.cpp
+  |
+
+file /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/boost_adaptbx/SConscript,line 117:
+	Configure(confdir = .sconf_temp)
+scons: Configure: ".sconf_temp/conftest_1.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_1.cpp <-
+  |  |#include <Python.h>
+  |
+scons: Configure: ".sconf_temp/conftest_1.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_1.o -c -pthread -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/build/include -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include/python2.7 .sconf_temp/conftest_1.cpp
+  |
+
+file /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/boost_adaptbx/SConscript,line 650:
+	Configure(confdir = .sconf_temp)
+scons: Configure: ".sconf_temp/conftest_2.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2.cpp <-
+  |  |#include <typeinfo>
+  |  |#include <iostream>
+  |  |#include <stddef.h>
+  |  |
+  |  |int
+  |  |main()
+  |  |{
+  |  |  std::cout
+  |  |    << static_cast<int>(typeid(unsigned short) == typeid(size_t))
+  |  |    << static_cast<int>(typeid(unsigned) == typeid(size_t))
+  |  |    << static_cast<int>(typeid(unsigned long) == typeid(size_t))
+  |  |    << static_cast<int>(typeid(unsigned long long) == typeid(size_t))
+  |  |    << std::endl;
+  |  |  return 0;
+  |  |}
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_2.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_2.o -c -pthread -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB .sconf_temp/conftest_2.cpp
+  |
+scons: Configure: "boost/libs/thread/src/future.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o boost/libs/thread/src/future.o -c -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_NO_DEPRECATED=1 -DBOOST_THREAD_BUILD_DLL=1 /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost/libs/thread/src/future.cpp
+  |
+scons: Configure: "boost/libs/thread/src/pthread/thread.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o boost/libs/thread/src/pthread/thread.o -c -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_NO_DEPRECATED=1 -DBOOST_THREAD_BUILD_DLL=1 /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost/libs/thread/src/pthread/thread.cpp
+  |
+scons: Configure: "boost/libs/thread/src/pthread/once.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o boost/libs/thread/src/pthread/once.o -c -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_NO_DEPRECATED=1 -DBOOST_THREAD_BUILD_DLL=1 /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost/libs/thread/src/pthread/once.cpp
+  |
+scons: Configure: "boost/libs/system/src/error_code.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o boost/libs/system/src/error_code.o -c -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -DBOOST_SYSTEM_DYN_LINK=1 -DBOOST_SYSTEM_NO_DEPRECATED=1 /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost/libs/system/src/error_code.cpp
+  |
+scons: Configure: "lib/libboost_system.so" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o lib/libboost_system.so -s -shared boost/libs/system/src/error_code.o -Llib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/lib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/lib
+  |
+scons: Configure: "lib/libboost_thread.so" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o lib/libboost_thread.so -s -shared boost/libs/thread/src/future.o boost/libs/thread/src/pthread/thread.o boost/libs/thread/src/pthread/once.o -Llib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/lib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/lib -lboost_system -lrt
+  |
+scons: Configure: ".sconf_temp/conftest_2" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_2 -s -pthread .sconf_temp/conftest_2.o -Llib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/lib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/lib -lboost_thread -lboost_system
+  |
+scons: Configure: ".sconf_temp/conftest_2.out" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_2 > .sconf_temp/conftest_2.out
+  |
+
+file /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/gltbx/SConscript,line 51:
+	Configure(confdir = .sconf_temp)
+scons: Configure: ".sconf_temp/conftest_3.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3.cpp <-
+  |  |
+  |  |#include <gltbx/include_opengl.h>
+  |  |#include <iostream>
+  |  |int main() { std::cout << GL_POINT << std::endl; return 0; }
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_3.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_3.o -c -pthread -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/build/include -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/gui_resources/gl2ps .sconf_temp/conftest_3.cpp
+  |
+scons: Configure: ".sconf_temp/conftest_3" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_3 -s -pthread .sconf_temp/conftest_3.o -Llib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/lib -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/lib -lboost_thread -lboost_system -lGLU -lGL
+  |
+scons: Configure: ".sconf_temp/conftest_3.out" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_3 > .sconf_temp/conftest_3.out
+  |
+
+file /scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project/gltbx/SConscript,line 59:
+	Configure(confdir = .sconf_temp)
+scons: Configure: ".sconf_temp/conftest_4.cpp" is up to date.
+scons: Configure: The original builder output was:
+  |.sconf_temp/conftest_4.cpp <-
+  |  |
+  |  |#include <gltbx/include_opengl.h>
+  |  |
+  |
+scons: Configure: ".sconf_temp/conftest_4.o" is up to date.
+scons: Configure: The original builder output was:
+  |g++ -o .sconf_temp/conftest_4.o -c -pthread -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/boost -fPIC -fno-strict-aliasing -w -DNDEBUG -O3 -funroll-loops -ffast-math -DBOOST_ALL_NO_LIB -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/build/include -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/cctbx_project -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/modules/gui_resources/gl2ps -I/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include/python2.7 .sconf_temp/conftest_4.cpp
+  |
+

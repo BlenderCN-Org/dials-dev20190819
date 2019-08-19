@@ -1,0 +1,5 @@
+libtbx.dxtbx.egg-info/PKG-INFO
+libtbx.dxtbx.egg-info/SOURCES.txt
+libtbx.dxtbx.egg-info/dependency_links.txt
+libtbx.dxtbx.egg-info/entry_points.txt
+libtbx.dxtbx.egg-info/top_level.txt

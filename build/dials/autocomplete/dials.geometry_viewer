@@ -1,0 +1,75 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  predict)
+   _dials_autocomplete_values="true false";;
+
+  autospin)
+   _dials_autocomplete_values="true false";;
+
+  require_images)
+   _dials_autocomplete_values="true false";;
+
+  show_crystal_axes)
+   _dials_autocomplete_values="true false";;
+
+  show_panel_axes)
+   _dials_autocomplete_values="true false";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  autospin=)
+   _dials_autocomplete_values="autospin=";;
+
+  angle=)
+   _dials_autocomplete_values="angle=";;
+
+  predict=)
+   _dials_autocomplete_values="predict=";;
+
+  marker_size=)
+   _dials_autocomplete_values="marker_size=";;
+
+  z_max=)
+   _dials_autocomplete_values="z_max=";;
+
+  detector_distance=)
+   _dials_autocomplete_values="detector_distance=";;
+
+  z_min=)
+   _dials_autocomplete_values="z_min=";;
+
+  experiments=)
+   _dials_autocomplete_values="input.experiments=";;
+
+  require_images=)
+   _dials_autocomplete_values="require_images=";;
+
+  show_crystal_axes=)
+   _dials_autocomplete_values="show_crystal_axes=";;
+
+  prediction_width=)
+   _dials_autocomplete_values="prediction_width=";;
+
+  show_panel_axes=)
+   _dials_autocomplete_values="show_panel_axes=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  *)
+    _dials_autocomplete_values="angle= autospin= detector_distance= experiments= input.experiments= marker_size= predict= prediction_width= require_images= show_crystal_axes= show_panel_axes= z_max= z_min=";;
+ esac
+}

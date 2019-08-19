@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Clearlooks
+Name[zh_TW]=&#28136;&#35264;
+Type=X-GNOME-Metatheme
+Comment=Attractive Usability
+Comment[zh_TW]=&#21560;&#24341;&#20154;&#30340;&#23526;&#29992;&#24615;
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Clearlooks
+MetacityTheme=Clearlooks
+IconTheme=Clearlooks

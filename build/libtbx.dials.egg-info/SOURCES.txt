@@ -1,0 +1,5 @@
+libtbx.dials.egg-info/PKG-INFO
+libtbx.dials.egg-info/SOURCES.txt
+libtbx.dials.egg-info/dependency_links.txt
+libtbx.dials.egg-info/entry_points.txt
+libtbx.dials.egg-info/top_level.txt

@@ -1,0 +1,27 @@
+from __future__ import absolute_import, division, print_function
+
+from dxtbx.format.FormatSMVADSC import FormatSMVADSC
+
+
+class FormatSMVHamamatsu(FormatSMVADSC):
+    @staticmethod
+    def understand(image_file):
+
+        size, header = FormatSMVHamamatsu.get_smv_header(image_file)
+
+        wanted_header_items = ["DETECTOR_NAME"]
+        if any(item not in header for item in wanted_header_items):
+            return False
+
+        return "hamamatsu" in header["DETECTOR_NAME"].lower()
+
+    def _start(self):
+
+        FormatSMVADSC._start(self)
+
+    def detectorbase_start(self):
+        from iotbx.detectors.hamamatsu import HamamatsuImage
+
+        self.detectorbase = HamamatsuImage(self._image_file)
+        self.detectorbase.open_file = self.open_file
+        self.detectorbase.readHeader()

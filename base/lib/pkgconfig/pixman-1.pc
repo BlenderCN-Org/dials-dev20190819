@@ -1,0 +1,11 @@
+prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+
+Name: Pixman
+Description: The pixman library (version 1)
+Version: 0.34.0
+Cflags: -I${includedir}/pixman-1
+Libs: -L${libdir} -lpixman-1
+

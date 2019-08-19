@@ -1,0 +1,45 @@
+Import( "env_etc" )
+
+if not env_etc.no_boost_python:
+  Import("env_boost_python_ext")
+  env = env_boost_python_ext.Clone()
+  env_etc.include_registry.prepend(
+    env = env,
+    paths = [ env_etc.boost_adaptbx_include ],
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_ext",
+    source="graph_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_connected_component_algorithm_ext",
+    source="connected_component_algorithm_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_breadth_first_search_ext",
+    source="breadth_first_search_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_graph_structure_comparison_ext",
+    source="graph_structure_comparison_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_maximum_clique_ext",
+    source="maximum_clique_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_min_cut_max_flow_ext",
+    source="min_cut_max_flow_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_utility_ext",
+    source="utility_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_metric_ext",
+    source="metric_ext.cpp",
+    )
+  env.SharedLibrary(
+    target="#lib/boost_adaptbx_graph_clustering_algorithm_ext",
+    source="clustering_algorithm_ext.cpp",
+    )

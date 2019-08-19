@@ -1,0 +1,14 @@
+prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+exec_prefix=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base
+libdir=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/lib
+includedir=/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/include
+
+Name: FreeType 2
+URL: http://freetype.org
+Description: A free, high-quality, and portable font engine.
+Version: 18.3.12
+Requires:
+Requires.private: 
+Libs: -L${libdir} -lfreetype
+Libs.private: -lz -lbz2 -L/scratch/jenkins_agent/workspace/dials_package_linux/build_dials/base/lib -lpng16 -lm -lz -lm
+Cflags: -I${includedir}/freetype2

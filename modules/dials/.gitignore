@@ -1,0 +1,34 @@
+# Compiled Python files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Temporary files
+.cache
+.pytest_cache
+
+# Python packaging
+/dist
+/dials.egg-info
+
+# Ignored Mathematica files shall be prefixed by _
+_*.nb
+*.fdb_latexmk
+*.gz
+*.pdf
+.DS_Store
+*~
+*.sw[op]
+*.log
+.git-notifier*
+git-notifier.log
+.gitversion
+
+# Python3 migration testing
+.python3-test-failures.new
+
+doc/sphinx/build
+doc/sphinx/documentation/tutorials/logs
+doc/sphinx/documentation/tutorials/logs_ccp4
+doc/sphinx/documentation/tutorials/logs_detail_betalactamase
+doc/sphinx/installation.stable_release.json

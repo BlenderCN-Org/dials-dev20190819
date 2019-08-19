@@ -1,0 +1,42 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  change_of_basis_op=)
+   _dials_autocomplete_values="change_of_basis_op=";;
+
+  hkl_offset=)
+   _dials_autocomplete_values="hkl_offset=";;
+
+  space_group=)
+   _dials_autocomplete_values="space_group=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  output.*)
+    _dials_autocomplete_values="output.experiments= output.reflections=";;
+
+  reference.*)
+    _dials_autocomplete_values="reference.experiments= reference.reflections=";;
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.reflections=";;
+
+  *)
+    _dials_autocomplete_values="change_of_basis_op= hkl_offset= input. output. reference. space_group=";;
+ esac
+}

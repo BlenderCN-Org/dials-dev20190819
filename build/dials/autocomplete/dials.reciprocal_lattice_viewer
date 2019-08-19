@@ -1,0 +1,114 @@
+function _dials_autocomplete_flags ()
+{
+ case "$1" in
+
+  black_background)
+   _dials_autocomplete_values="true false";;
+
+  autospin)
+   _dials_autocomplete_values="true false";;
+
+  show_rotation_axis)
+   _dials_autocomplete_values="true false";;
+
+  show_beam_vector)
+   _dials_autocomplete_values="true false";;
+
+  reverse_phi)
+   _dials_autocomplete_values="true false";;
+
+  outlier_display)
+   _dials_autocomplete_values="outliers inliers";;
+
+  show_reciprocal_cell)
+   _dials_autocomplete_values="true false";;
+
+  display)
+   _dials_autocomplete_values="all unindexed indexed integrated";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_expansion ()
+{
+ case "$1" in
+
+  black_background=)
+   _dials_autocomplete_values="black_background=";;
+
+  autospin=)
+   _dials_autocomplete_values="autospin=";;
+
+  show_rotation_axis=)
+   _dials_autocomplete_values="show_rotation_axis=";;
+
+  show_beam_vector=)
+   _dials_autocomplete_values="show_beam_vector=";;
+
+  experiment_ids=)
+   _dials_autocomplete_values="experiment_ids=";;
+
+  reverse_phi=)
+   _dials_autocomplete_values="reverse_phi=";;
+
+  beam_centre=)
+   _dials_autocomplete_values="beam_centre=";;
+
+  z_max=)
+   _dials_autocomplete_values="z_max=";;
+
+  model_view_matrix=)
+   _dials_autocomplete_values="model_view_matrix=";;
+
+  outlier_display=)
+   _dials_autocomplete_values="outlier_display=";;
+
+  z_min=)
+   _dials_autocomplete_values="z_min=";;
+
+  experiments=)
+   _dials_autocomplete_values="input.experiments=";;
+
+  d_min=)
+   _dials_autocomplete_values="d_min=";;
+
+  show_reciprocal_cell=)
+   _dials_autocomplete_values="show_reciprocal_cell=";;
+
+  n_min=)
+   _dials_autocomplete_values="n_min=";;
+
+  marker_size=)
+   _dials_autocomplete_values="marker_size=";;
+
+  n_max=)
+   _dials_autocomplete_values="n_max=";;
+
+  partiality_max=)
+   _dials_autocomplete_values="partiality_max=";;
+
+  partiality_min=)
+   _dials_autocomplete_values="partiality_min=";;
+
+  display=)
+   _dials_autocomplete_values="display=";;
+
+  reflections=)
+   _dials_autocomplete_values="input.reflections=";;
+
+  *)
+    _dials_autocomplete_values="";;
+ esac
+}
+function _dials_autocomplete_hints ()
+{
+ case "$1" in
+
+  input.*)
+    _dials_autocomplete_values="input.experiments= input.reflections=";;
+
+  *)
+    _dials_autocomplete_values="autospin= beam_centre= black_background= d_min= display= experiment_ids= experiments= input. marker_size= model_view_matrix= n_max= n_min= outlier_display= partiality_max= partiality_min= reflections= reverse_phi= show_beam_vector= show_reciprocal_cell= show_rotation_axis= z_max= z_min=";;
+ esac
+}
